@@ -26,7 +26,9 @@ export const ArticleActionsContainer = ({
           extraClasses="sidebar-button"
           icon="sidebar"
           type="action"
-          aria-label="Expand sidebar"
+          ariaLabel="Sidebar"
+          ariaExpanded={isSidebarOpen}
+          ariaControls="sidebar-quicklinks"
           onClickHandler={() => setIsSidebarOpen(!isSidebarOpen)}
         />
 
